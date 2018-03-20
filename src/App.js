@@ -48,7 +48,6 @@ class App extends Component {
     console.log(clickedCard);
 
     if (clickedCard[0].clicked === false) {
-      // console.log("in here");
       clickedCard[0].clicked = true;
       score++;
 
@@ -71,7 +70,7 @@ class App extends Component {
       cards = this.shuffleArray(cards);
       this.resetGame();
     }
-    
+
     this.setState({ cards });
     this.setState({ score });
     this.setState({ message });
