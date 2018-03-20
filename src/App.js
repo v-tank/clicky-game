@@ -24,6 +24,24 @@ class App extends Component {
     })
   )
 
+  shuffleArray = (array) => {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+    return array;
+  }
+  
   checkCard = (id) => {
     let cards = this.state.cards;
     let clickedCard = cards.filter(card => card.id === id);
@@ -41,17 +59,19 @@ class App extends Component {
       if (score >= 12) {
         message = "You won! Do it again."
         score = 0;
+        cards = this.shuffleArray(cards);
         this.resetGame();
       } else {
         message = "You guessed correctly!";
+        cards = this.shuffleArray(cards);
       }
     } else {
       message = "You guessed incorrectly!";
       score = 0;
+      cards = this.shuffleArray(cards);
       this.resetGame();
     }
-
-    console.log(cards);
+    
     this.setState({ cards });
     this.setState({ score });
     this.setState({ message });
@@ -72,14 +92,18 @@ class App extends Component {
             <h2>Click on an image to earn points, but don't click on any more than once!</h2>
           </div>
           <div className="container">
-            {this.state.cards.map(card => (
-              <Card 
-                id={card.id}
-                key={card.id}
-                image={card.image}
-                checkCard={this.checkCard}
-              />
-            ))}
+            {this.state.cards.map(card => 
+              {
+                return (
+                  <Card 
+                    id={card.id}
+                    key={card.id}
+                    image={card.image}
+                    checkCard={this.checkCard}
+                  />
+                )
+              }
+            )}
           </div>
         </div>
       </Router>
