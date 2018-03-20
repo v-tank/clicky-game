@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import Card from "./components/Cards";
-import Wrapper from "./components/Wrapper";
 import Navbar from "./components/Navbar";
 import cards from "./cards.json";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 
 let score = 0;
@@ -79,7 +77,6 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
         <div>
           <Navbar 
             score={score}
@@ -105,7 +102,6 @@ class App extends Component {
             )}
           </div>
         </div>
-      </Router>
     );
   }
 }
