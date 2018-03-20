@@ -1,0 +1,73 @@
+[{
+    "id": 1,
+    "name": "Venusaur",
+    "image": "https://img.pokemondb.net/artwork/venusaur.jpg",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "name": "Charizard",
+    "image": "https://img.pokemondb.net/artwork/charizard.jpg",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "name": "Blastoise",
+    "image": "https://img.pokemondb.net/artwork/blastoise.jpg",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "name": "Mewtwo",
+    "image": "https://img.pokemondb.net/artwork/mewtwo.jpg",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "name": "Pikachu",
+    "image": "https://img.pokemondb.net/artwork/pikachu.jpg",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "name": "Squirtle",
+    "image": "https://img.pokemondb.net/artwork/squirtle.jpg",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "name": "Snorlax",
+    "image": "https://img.pokemondb.net/artwork/snorlax.jpg",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "name": "Onix",
+    "image": "https://img.pokemondb.net/artwork/onix.jpg",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "name": "Jigglypuff",
+    "image": "https://img.pokemondb.net/artwork/jigglypuff.jpg",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "name": "Slowpoke",
+    "image": "https://img.pokemondb.net/artwork/slowpoke.jpg",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "name": "Rapidash",
+    "image": "https://img.pokemondb.net/artwork/rapidash.jpg",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "name": "Gyarados",
+    "image": "https://img.pokemondb.net/artwork/gyarados.jpg",
+    "clicked": false
+  }
+]
