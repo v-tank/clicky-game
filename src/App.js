@@ -101,6 +101,13 @@ class App extends Component {
               }
             )}
           </div>
+
+          <footer className="footer">
+            <div className="bottom">
+              Clicky Game!
+                {/* <img alt="react" src="%PUBLIC_URL%/logo.svg" /> */}
+            </div>
+          </footer>
         </div>
     );
   }
