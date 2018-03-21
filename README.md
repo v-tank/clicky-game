@@ -1,5 +1,7 @@
 # Pokemon Clicky Game
 
+![Pokemon Clicky Game](https://github.com/v-tank/clicky-game/blob/master/public/images/Clicky-Game.png)
+
 ## Table of Contents 
 
 1. [Overview](#overview)
