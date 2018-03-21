@@ -1,1 +1,1 @@
-export { default } from "./Card";
+export { default } from "./Card"; // Export the Card component folder
