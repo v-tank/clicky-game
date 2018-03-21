@@ -1,4 +1,23 @@
+/* Formats the navbar items */
+
+.navbar {
+  background: #292b2f !important;
+  min-height: 70px;
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+  color: #fff;
+  font-size: calc(10px + 14 * (100vw - 320px)/ 800);
+  z-index: 99;
+  white-space: nowrap
+}
+
 .row {
   width: 100%;
   margin: 0;
+}
+
+.scores {
+  color: #e3874f;
 }
